@@ -4,12 +4,13 @@ import SkillBox from "../../chip/SkillBox";
 
 import { IoLogoHtml5, IoLogoCss3 } from "react-icons/io";
 
-
 import {
   SiJavascript,
   SiTailwindcss,
   SiMongodb,
   SiExpress,
+  SiPython,
+  SiGit,
 } from "react-icons/si";
 import { GrCode } from "react-icons/gr";
 import { SiNextdotjs } from "react-icons/si";
@@ -51,10 +52,11 @@ const Skills = ({ darkMode }) => {
                 />
                 <ProgressBar logo={<FaReact />} name={"React Js"} value={80} />
                 <ProgressBar
-                  logo={<SiTailwindcss />}
-                  name={"Tailwind CSS"}
+                  logo={<FaReact />}
+                  name={"ReactNative Js"}
                   value={80}
                 />
+                <ProgressBar logo={<SiPython />} name={"Python"} value={60} />
               </div>
             </div>
           </div>
@@ -83,12 +85,10 @@ const Skills = ({ darkMode }) => {
               />
               <SkillBox
                 className=""
-                logo={
-                  <GrCode/>
-                }
+                logo={<SiGit />}
                 black={"black"}
                 white={"white"}
-                skill={"C++"}
+                skill={"Git"}
               />
               {/* <SkillBox
                 className=""

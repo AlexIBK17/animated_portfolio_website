@@ -20,10 +20,10 @@ const navItems = [
     id: 3,
     name: "resume",
   },
-  {
-    id: 4,
-    name: "contact",
-  },
+  // {
+  //   id: 4,
+  //   name: "contact",
+  // },
 ];
 
 const NavBar = ({ toggleDarkMode, darkMode }) => {
@@ -62,7 +62,7 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
             to="/"
             className="text-3xl font-bold sm:text-3xl"
           >
-            John Doe.
+            Ibukun Alao.
           </Link>
         </div>
         <div
