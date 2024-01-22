@@ -11,6 +11,7 @@ import {
   SiExpress,
   SiPython,
   SiGit,
+  SiTypescript,
 } from "react-icons/si";
 import { GrCode } from "react-icons/gr";
 import { SiNextdotjs } from "react-icons/si";
@@ -57,6 +58,11 @@ const Skills = ({ darkMode }) => {
                   value={80}
                 />
                 <ProgressBar logo={<SiPython />} name={"Python"} value={60} />
+                <ProgressBar
+                  logo={<SiTypescript />}
+                  name={"TypeScript"}
+                  value={50}
+                />
               </div>
             </div>
           </div>
