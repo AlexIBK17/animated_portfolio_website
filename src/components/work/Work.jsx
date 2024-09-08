@@ -1,6 +1,6 @@
 import React from "react";
 import WorkCard from "../../chip/WorkCard";
-
+import "./Responsive.css";
 const Work = () => {
   return (
     <div id="works" className="container m-auto mt-16">
@@ -15,17 +15,7 @@ const Work = () => {
         </p>
       </div>
       {/* card */}
-      <div
-        className="card-wrapper mx-auto w-[90%] sm:w-fit mt-5"
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          flexWrap: "nowrap", // Prevent items from wrapping to the next line
-          overflowX: "auto",
-          scrollSnapType: "x mandatory",
-          gap: "1rem", // Optional: Adds space between the cards
-        }}
-      >
+      <div className="card-wrapper mx-auto w-[90%] sm:w-fit mt-5 main-card">
         <div
           className="card-box "
           style={{
@@ -33,7 +23,6 @@ const Work = () => {
             flexDirection: "row",
             overflowX: "auto",
             scrollSnapAlign: "start",
-            paddingRight: "20px",
           }}
         >
           <WorkCard />

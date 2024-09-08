@@ -1,0 +1,55 @@
+/* Mobile styles for screens smaller than 768px */
+@media (max-width: 637px) {
+  .main-card {
+    min-width: 100%; /* Ensure each card takes up 100% of the viewport width */
+    padding-right: 0; /* Adjust padding for smaller screens */
+  }
+
+  /* Style the card wrapper for horizontal scrolling */
+  .card-wrapper {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Snap to the next card when scrolling */
+  }
+
+  /* Ensure each card snaps properly */
+  .card-box {
+    scroll-snap-align: start; /* Ensure the next card snaps to the start */
+    flex: 0 0 100%; /* Each card takes up 100% of the width */
+  }
+  .shell {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .main-card {
+    min-width: 100%; /* Ensure each card takes up 100% of the viewport width */
+    padding-right: 0; /* Adjust padding for smaller screens */
+  }
+
+  /* Style the card wrapper for horizontal scrolling */
+  .card-wrapper {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Snap to the next card when scrolling */
+  }
+
+  /* Ensure each card snaps properly */
+  .card-box {
+    scroll-snap-align: start; /* Ensure the next card snaps to the start */
+    flex: 0 0 100%; /* Each card takes up 100% of the width */
+  }
+
+  .name {
+    margin-top: 10px;
+  }
+  #home {
+    padding-bottom: 10px;
+  }
+
+  .shell {
+    min-width: 100%;
+  }
+}

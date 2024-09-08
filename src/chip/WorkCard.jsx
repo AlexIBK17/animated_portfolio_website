@@ -4,6 +4,7 @@ import { data } from "../data/data";
 import { RxExternalLink } from "react-icons/rx";
 import { AiOutlineGithub } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import "../components/work/Responsive.css";
 
 const WorkCard = () => {
   const reversedData = [...data].reverse();
@@ -15,8 +16,8 @@ const WorkCard = () => {
           <div
             data-aos="zoom-in"
             key={data.id}
-            className="flex flex-col justify-center items-center gap-9"
-            style={{ justifyContent: "center" }}
+            className="flex flex-col justify-center items-center gap-9 main-card"
+            style={{ justifyContent: "center", paddingRight: "30px" }}
           >
             <POPUP className="img-content relative">
               <div className="h-[280px] w-[460px] hover:scale-125 transition duration-500 cursor-pointer shadow-xl rounded-md overflow-hidden sm:h-[260px] sm:w-[92%] sm:bg-cover mx-auto ">
